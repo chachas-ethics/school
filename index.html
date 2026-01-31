@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO BASICS -->
+  <title>Sunrise Secondary School | Quality Education for Future Leaders</title>
+  <meta name="description" content="Sunrise Secondary School offers quality private education for students aged 13–19, focused on academics, character, safety, and results." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="font-family: abril-fatface;" class=" text-gray-900">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex h-24 items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2">
+          <img src="thumbnails/camblog.jpg" alt="Sunrise Secondary School Logo" class="h-10 w-auto">
+          <span class="font-bold text-2xl">SUNRISE SCHOOLS</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
+          <a href="#home" class="hover:text-green-600">Home</a>
+          <a href="#about" class="hover:text-green-600">About</a>
+          <a href="#academics" class="hover:text-green-600">Academics</a>
+          <a href="#admissions" class="hover:text-green-600">Admissions</a>
+          <a href="#contact" class="hover:text-green-600">Contact</a>
+
+          <a href="#admissions"
+             class="ml-4 inline-flex items-center rounded-lg bg-green-600 px-5 py-2 text-white font-semibold hover:bg-green-700 transition">
+            Apply Now
+          </a>
+        </nav>
+
+          <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden text-2xl">
+      ☰
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobileMenu"
+  class="fixed top-0 left-0 h-full w-full bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+</div>
+
+ 
+
+<!-- MOBILE SLIDE MENU -->
+<div id="mobilePanel"
+  class="fixed top-0 left-0 h-full w-full bg-green-800 transform -translate-x-full transition-transform duration-300 z-50">
+
+  <!-- Close Button -->
+  <div class="flex justify-end p-4">
+    <button id="closeBtn" class="text-2xl">✕</button>
+  </div>
+
+
+  <!-- Links -->
+  <nav class="flex flex-col gap-12 px-6 py-12 font-bold text-white text-2xl ">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#staff" class="mobile-link">Academics</a>
+    <a href="#news" class="mobile-link">Admission</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+</div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HOME / HERO ================= -->
+  <main id="home">
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-14 items-center">
+
+        <!-- Left Content -->
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+            A School Shaping
+            <span class="text-green-600">Future Leaders</span>
+          </h1>
+
+          <p class="mt-6 text-lg text-gray-600 max-w-xl">
+            Quality private education for students and <strong>Future Leaders</strong>,
+            built on academic excellence, discipline, and real results.
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#admissions"
+               class="rounded-xl bg-green-600 px-6 py-3 text-white font-semibold shadow hover:bg-green-700 transition">
+              Apply Now
+            </a>
+
+            <a href="#visit"
+               class="rounded-xl border border-gray-300 px-6 py-3 font-semibold text-gray-700 hover:border-green-600 hover:text-green-600 transition">
+              Book a Visit
+            </a>
+          </div>
+
+          <!-- Value Pillars -->
+          <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 text-sm">
+            <div>
+              <h3 class="font-semibold">Academics</h3>
+              <p class="text-gray-600 mt-1">Strong curriculum & exam performance</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold">Safety</h3>
+              <p class="text-gray-600 mt-1">Secure campus & student wellbeing</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold">Character</h3>
+              <p class="text-gray-600 mt-1">Discipline, values & leadership</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold">Results</h3>
+              <p class="text-gray-600 mt-1">Proven academic outcomes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="relative">
+          <img
+            src="thumbnails/cambstuds.webp"
+            alt="Students at Sunrise Secondary School"
+            class="rounded-2xl shadow-lg w-full object-cover"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <!-- Section Header -->
+    <div class="max-w-2xl mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        About <span class="text-green-600">Sunrise Schools</span>
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Building academic excellence, strong character, and responsible future leaders.
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Left: School Overview -->
+      <div class="space-y-10">
+
+        <!-- Mission & Vision -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Our Mission & Vision</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Our mission is to provide high-quality secondary education that nurtures
+            academic excellence, discipline, and moral values. Our vision is to become
+            a leading private secondary school recognized for outstanding results and
+            well-rounded graduates.
+          </p>
+        </div>
+
+        <!-- History -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Our History</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Established in 2010, Sunrise Secondary School was founded with a clear goal:
+            to offer a safe, disciplined, and academically strong learning environment.
+            Over the years, we have grown steadily while maintaining our commitment to
+            quality education.
+          </p>
+        </div>
+
+        <!-- Values -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Our Values & Philosophy</h3>
+          <ul class="mt-4 grid sm:grid-cols-2 gap-4 text-gray-600">
+            <li>✔ Academic excellence</li>
+            <li>✔ Discipline and integrity</li>
+            <li>✔ Respect and responsibility</li>
+            <li>✔ Holistic student development</li>
+          </ul>
+        </div>
+
+        <!-- Accreditation -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Accreditations & Registration</h3>
+          <p class="mt-3 text-gray-600">
+            Sunrise Secondary School is fully registered and accredited by the relevant
+            education authorities, ensuring compliance with national education standards.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right: Headteacher Message -->
+      <div class="bg-white rounded-2xl shadow-md p-8">
+
+        <div class="flex items-center gap-4 mb-6">
+          <img
+            src="thumbnails/headmiss.webp"
+            alt="Headteacher of Sunrise Secondary School"
+            class="h-16 w-16 rounded-full object-cover"
+          >
+          <div>
+            <h4 class="font-semibold text-gray-900">Dr. Jane Mwita</h4>
+            <p class="text-sm text-gray-600">Headteacher</p>
+          </div>
+        </div>
+
+        <p class="text-gray-600 leading-relaxed">
+          “At Sunrise Secondary School, we believe every student has the potential to
+          succeed. Our dedicated teachers, structured curriculum, and strong values
+          create an environment where students are challenged, supported, and prepared
+          for future success.”
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="academics" class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <!-- Section Header -->
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        Academics & Curriculum
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Quality education structured to prepare students for success in exams and life.
+      </p>
+    </div>
+
+    <!-- Curriculum Grid -->
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <!-- Secondary School -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-8">
+        <h3 class="text-xl font-semibold text-green-800 mb-4">Secondary School</h3>
+        <p class="text-gray-600 mb-3"><strong>Curriculum:</strong> Cambridge International & NECTA</p>
+        <p class="text-gray-600 mb-3"><strong>Subjects Offered:</strong> Mathematics, English, Biology, Physics, Chemistry, History, Geography, ICT</p>
+        <p class="text-gray-600"><strong>Assessment:</strong> Continuous assessment + end-of-term exams + national exams</p>
+      </div>
+
+      <!-- Primary School -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-8">
+        <h3 class="text-xl font-semibold text-green-800 mb-4">Primary School</h3>
+        <p class="text-gray-600 mb-3"><strong>Curriculum:</strong> Cambridge Primary</p>
+        <p class="text-gray-600 mb-3"><strong>Subjects Offered:</strong> Mathematics, English, Science, Social Studies, Arts, ICT</p>
+        <p class="text-gray-600"><strong>Assessment:</strong> Term exams + project work + continuous assessment</p>
+      </div>
+
+      <!-- (Optional) Nursery / Pre-school -->
+      <div class="bg-gray-50 rounded-2xl shadow-md p-8">
+        <h3 class="text-xl font-semibold text-green-800 mb-4">Nursery / Pre-school</h3>
+        <p class="text-gray-600 mb-3"><strong>Curriculum:</strong> Montessori & Creative Play</p>
+        <p class="text-gray-600 mb-3"><strong>Subjects / Activities:</strong> Early literacy, numeracy, arts & crafts, music, play-based learning</p>
+        <p class="text-gray-600"><strong>Assessment:</strong> Observational assessment & developmental milestones</p>
+      </div>
+
+    </div>
+
+    <!-- Optional CTA -->
+    <div class="mt-16 text-center">
+      <a href="#admissions"
+         class="inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-3 text-white font-semibold shadow-md hover:from-emerald-600 hover:to-green-700 transition">
+        Learn More / Apply Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="admissions" class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <!-- Section Header -->
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        Admissions
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Join Sunrise Secondary School. We accept students of all age groups with a passion for learning.
+      </p>
+    </div>
+
+    <!-- Admission Details Grid -->
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Left: Requirements & Process -->
+      <div class="space-y-10">
+
+        <!-- Admission Requirements -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 mb-3">Admission Requirements</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Completed previous level certificate or report</li>
+            <li>Birth certificate copy</li>
+            <li>Passport size photos</li>
+            <li>Medical clearance form</li>
+          </ul>
+        </div>
+
+        <!-- Application Process -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 mb-3">Application Process</h3>
+          <ol class="list-decimal list-inside text-gray-600 space-y-2">
+            <li>Download and fill the application form</li>
+            <li>Submit form with required documents to the school office or email</li>
+            <li>Attend the entrance assessment/interview</li>
+            <li>Receive acceptance letter</li>
+            <li>Pay enrollment fee to confirm placement</li>
+          </ol>
+        </div>
+
+        <!-- Age Eligibility -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 mb-3">Age Eligibility</h3>
+          <p class="text-gray-600">
+            Students aged <strong>13–19</strong> are eligible for admission into the appropriate level.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right: Fees, Downloads & CTA -->
+      <div class="space-y-10">
+
+        <!-- Fees Overview -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 mb-3">Fees Overview</h3>
+          <p class="text-gray-600">
+            Our fees vary by level. For detailed fee structure, please <strong>request the fee brochure</strong> or contact the admissions office.
+          </p>
+        </div>
+
+        <!-- Downloadable Forms -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 mb-3">Downloadable Forms</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="forms/application-form.pdf" target="_blank"
+                 class="inline-block text-blue-500 font-medium hover:underline">
+                Application Form (PDF)
+              </a>
+            </li>
+            <li>
+              <a href="forms/medical-form.pdf" target="_blank"
+                 class="inline-block text-blue-500 font-medium hover:underline">
+                Medical Clearance Form (PDF)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-6">
+          <a href="#contact"
+             class="inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-3 text-white font-semibold shadow-md hover:from-emerald-600 hover:to-green-700 transition">
+            Apply Today
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="facilities" class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <!-- Section Header -->
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        School Life & Facilities
+      </h2>
+      <p class="mt-4 text-gray-600">
+        A safe, vibrant, and well-equipped environment where students grow academically and personally.
+      </p>
+    </div>
+
+    <!-- Facilities Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <!-- Classroom -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/classes.webp" alt="Classroom at Sunrise Secondary" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Classrooms</h3>
+        <p class="text-gray-600 mt-2">Bright, well-ventilated, and fully equipped classrooms for focused learning.</p>
+      </div>
+
+      <!-- Labs -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/labs.jpg" alt="Science Lab" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Labs</h3>
+        <p class="text-gray-600 mt-2">State-of-the-art science and computer labs for hands-on learning.</p>
+      </div>
+
+      <!-- Library -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/library.jpg" alt="School Library" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Library</h3>
+        <p class="text-gray-600 mt-2">A quiet, resource-rich library with books, journals, and digital materials.</p>
+      </div>
+
+      <!-- Sports -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/fields.webp" alt="Sports Facilities" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Sports</h3>
+        <p class="text-gray-600 mt-2">Wide fields, courts, and facilities to promote physical health and teamwork.</p>
+      </div>
+
+      <!-- Transport -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/transport.jpg" alt="School Transport" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Transport</h3>
+        <p class="text-gray-600 mt-2">Safe and reliable school buses ensuring students reach school comfortably.</p>
+      </div>
+
+      <!-- Meals -->
+      <div class="flex flex-col items-center text-center">
+        <img src="thumbnails/meal.avif" alt="School Meals" class="h-40 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Meals</h3>
+        <p class="text-gray-600 mt-2">Nutritious meals prepared daily to keep students healthy and focused.</p>
+      </div>
+
+      <!-- Safety & Security -->
+      <div class="flex flex-col items-center text-center sm:col-span-2 lg:col-span-3">
+        <img src="thumbnails/cctv.webp" alt="School Safety" class="h-56 w-full object-cover rounded-xl mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-green-800">Safety & Security</h3>
+        <p class="text-gray-600 mt-2">
+          24/7 security, CCTV, and strict entry protocols ensure a safe learning environment for every student.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TEACHERS / STAFF SECTION -->
+<section id="staff" class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- SECTION HEADER -->
+    <div class="max-w-2xl mb-16 text-center mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        School Life &amp; Facilities
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Experienced educators dedicated to nurturing your child’s growth.
+      </p>
+    </div>
+
+    <!-- STAFF GRID -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+
+      <!-- TEACHER CARD 1 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden flex flex-col items-center text-center p-6">
+        <img src="thumbnails/headmiss.webp" alt="Jane Doe - Headteacher" class="h-40 w-40 object-cover rounded-full border-4 border-green-200 mb-4">
+        <h3 class="text-lg font-semibold ">Jane Mwita</h3>
+        <p class=" text-sm mb-1">Headteacher</p>
+        <p class="text-gray-600 text-sm">M.Ed in Education • 15 Years Experience</p>
+      </div>
+
+      <!-- TEACHER CARD 2 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden flex flex-col items-center text-center p-6">
+        <img src="thumbnails/johnsmith.jpg" alt="John Smith - Math Teacher" class="h-40 w-40 object-cover rounded-full border-4 border-green-200 mb-4">
+        <h3 class="text-lg font-semibold">John Smith</h3>
+        <p class=" text-sm mb-1">Math Teacher</p>
+        <p class="text-gray-600 text-sm">B.Sc Mathematics • 10 Years Experience</p>
+      </div>
+
+      <!-- TEACHER CARD 3 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden flex flex-col items-center text-center p-6">
+        <img src="thumbnails/mary kamau.jpg" alt="Mary Kamau - Science Teacher" class="h-40 w-40 object-cover rounded-full border-4 border-green-200 mb-4">
+        <h3 class="text-lg font-semibold">Mary Kamau</h3>
+        <p class=" text-sm mb-1">Science Teacher</p>
+        <p class="text-gray-600 text-sm">B.Sc Biology • 8 Years Experience</p>
+      </div>
+
+      <!-- TEACHER CARD 4 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden flex flex-col items-center text-center p-6">
+        <img src="thumbnails/samuel lee.webp" alt="Samuel Lee - Sports Coordinator" class="h-40 w-40 object-cover rounded-full border-4 border-green-200 mb-4">
+        <h3 class="text-lg font-semibold ">Samuel Lee</h3>
+        <p class=" text-sm mb-1">Sports Coordinator</p>
+        <p class="text-gray-600 text-sm">B.Sc Physical Education • 12 Years Experience</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWS / EVENTS / ANNOUNCEMENTS SECTION -->
+<section id="news" class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- SECTION HEADER -->
+    <div class="max-w-2xl mb-16 text-center mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        Latest News & Events
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Stay updated with our school activities, announcements, and achievements.
+      </p>
+    </div>
+
+    <!-- EVENTS GRID -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- EVENT CARD 1 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden">
+        <img src="thumbnails/annual sports day.jpg" alt="Sports Day Event" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2 text-green-800">Annual Sports Day</h3>
+          <p class="text-gray-600 text-sm mb-2">Our students showcased their athletic skills and team spirit in an energetic day of competitions.</p>
+          <p class="text-xs text-gray-500">Date: Jan 12, 2026</p>
+        </div>
+      </div>
+
+      <!-- EVENT CARD 2 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden">
+        <img src="thumbnails/graduation.jpg" alt="Graduation Event" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2 text-green-800">Graduation Ceremony</h3>
+          <p class="text-gray-600 text-sm mb-2">Celebrating the achievements of our senior class with pride and joy.</p>
+          <p class="text-xs text-gray-500">Date: Dec 20, 2025</p>
+        </div>
+      </div>
+
+      <!-- EVENT CARD 3 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden">
+        <img src="thumbnails/trip.jpeg" alt="School Trip Event" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2 text-green-800">Educational Trip</h3>
+          <p class="text-gray-600 text-sm mb-2">Our students explored local landmarks, learning outside the classroom.</p>
+          <p class="text-xs text-gray-500">Date: Nov 15, 2025</p>
+        </div>
+      </div>
+
+      <!-- EVENT CARD 4 -->
+      <div class=" rounded-2xl shadow-md overflow-hidden">
+        <img src="thumbnails/bts.jpeg" alt="Announcement" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2 text-green-800">Term Opening Announcement</h3>
+          <p class="text-gray-600 text-sm mb-2">The new term begins on Feb 1, 2026. Welcome back to all students!</p>
+          <p class="text-xs text-gray-500">Date: Jan 25, 2026</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT / VISIT US SECTION -->
+<section id="contact" class="bg-green-50 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- SECTION HEADER -->
+    <div class="max-w-2xl mb-16 text-center mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        Contact & Visit Us
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Reach out, ask questions, or schedule a tour. We're here to help.
+      </p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- FORM -->
+      <form class="bg-white rounded-2xl shadow-md p-8 space-y-4">
+        <h3 class="text-lg font-semibold mb-4">Send a Message / Book a Tour</h3>
+
+        <div>
+          <label for="name" class="block text-gray-700 text-sm font-medium">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" class="w-full mt-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500" required>
+        </div>
+
+        <div>
+          <label for="email" class="block text-gray-700 text-sm font-medium">Email</label>
+          <input type="email" id="email" placeholder="john@example.com" class="w-full mt-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500" required>
+        </div>
+
+        <div>
+          <label for="phone" class="block text-gray-700 text-sm font-medium">Phone / WhatsApp</label>
+          <input type="tel" id="phone" placeholder="+255 7XX XXX XXX" class="w-full mt-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500" required>
+        </div>
+
+        <div>
+          <label for="message" class="block text-gray-700 text-sm font-medium">Message / Tour Request</label>
+          <textarea id="message" rows="4" placeholder="Your message..." class="w-full mt-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-600 transition">
+          Send Message / Book Tour
+        </button>
+      </form>
+
+      <!-- CONTACT INFO + MAP -->
+      <div class="space-y-6">
+
+        <!-- PHONE & EMAIL -->
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold ">Contact Info</h3>
+          <p class="flex items-center gap-2 text-gray-700">📞 <a href="tel:+255788296274" class="hover:text-green-600 transition">+255 788 296 274</a></p>
+          <p class="flex items-center gap-2 text-gray-700">💬 <a href="https://wa.me/255788296274" target="_blank" class="hover:text-green-600 transition">WhatsApp Us</a></p>
+          <p class="flex items-center gap-2 text-gray-700">✉️ <a href="mailto:info@schoolname.com" class="hover:text-green-600 transition">info@schoolname.com</a></p>
+        </div>
+
+        <!-- VISITING HOURS -->
+        <div>
+          <h3 class="text-lg font-semibold ">Visiting Hours</h3>
+          <p class="text-gray-700">Monday - Friday: 8:00 AM - 4:00 PM</p>
+          <p class="text-gray-700">Saturday: 9:00 AM - 12:00 PM</p>
+        </div>
+
+       <!-- GOOGLE MAP -->
+<div class="mt-4">
+  <h3 class="text-lg font-semibold  mb-2">Our Location</h3>
+  <iframe
+    class="w-full h-[250px] rounded-2xl border border-green-200"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.63248979983!2d39.2083288!3d-6.792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b6a0c2a8d0f%3A0x9f07a5c6e9b3f5e!2sDar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1738210000000"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- SECTION HEADER -->
+    <div class="max-w-2xl mb-16 text-center mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-green-800">
+        School Gallery
+      </h2>
+      <p class="mt-4 text-gray-600">
+        A glimpse into daily life, events, and our facilities.
+      </p>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- IMAGE 1 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/students.webp" alt="Students in classroom" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/annual sports day.jpg" alt="Sports day event" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 3 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/library.jpg" alt="School library" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 4 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/labs.jpg" alt="Science laboratory" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 5 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/trip.jpeg" alt="School trip" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 6 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/canteen.jpeg" alt="School canteen" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 7 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/art class.jpg" alt="Art class" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+      <!-- IMAGE 8 -->
+      <div class="overflow-hidden rounded-2xl shadow-md group">
+        <img src="thumbnails/school assembly.jpg" alt="School assembly" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER / LEGAL SECTION -->
+<footer class="bg-green-700 text-white py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+
+    <!-- CONTACT INFO -->
+    <div class="space-y-3">
+      <h4 class="font-semibold text-lg">Contact Us</h4>
+      <p class="flex items-center gap-2">📞 <a href="tel:+255788296274" class="hover:text-green-200 transition">+255 788 296 274</a></p>
+      <p class="flex items-center gap-2">💬 <a href="https://wa.me/255788296274" target="_blank" class="hover:text-green-200 transition">WhatsApp</a></p>
+      <p class="flex items-center gap-2">✉️ <a href="mailto:info@schoolname.com" class="hover:text-green-200 transition">info@schoolname.com</a></p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="space-y-3">
+      <h4 class="font-semibold text-lg">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="#home" class="hover:text-green-200 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-green-200 transition">About Us</a></li>
+        <li><a href="#staff" class="hover:text-green-200 transition">Teachers</a></li>
+        <li><a href="#news" class="hover:text-green-200 transition">News & Events</a></li>
+        <li><a href="#gallery" class="hover:text-green-200 transition">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-green-200 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LEGAL & SOCIAL -->
+    <div class="space-y-3">
+      <h4 class="font-semibold text-lg">Legal & Follow Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="hover:text-green-200 transition">Privacy Policy</a></li>
+        <li><a href="/terms.html" class="hover:text-green-200 transition">Terms of Service</a></li>
+      </ul>
+     <div class="flex items-center gap-5 mt-4 text-xl">
+  <a href="#" aria-label="Facebook" class="hover:text-green-200 transition">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="#" aria-label="Twitter" class="hover:text-green-200 transition">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+  <a href="#" aria-label="Instagram" class="hover:text-green-200 transition">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="mt-12 border-t border-green-600 pt-6 text-center text-sm text-green-200">
+    &copy; 2026 SchoolName. All Rights Reserved.<br>
+    <br>
+    Designed And Developed By <a class="text-white" href="https://wa.me/255788296274">SYNLOTECH TECHNOLOGIES</a>
+  </div>
+  
+</footer>
+
+
+  </main>
+
+
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobilePanel = document.getElementById("mobilePanel");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
+
+  function openMenu() {
+    mobileMenu.classList.remove("opacity-0", "pointer-events-none");
+    mobilePanel.classList.remove("-translate-x-full");
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+    mobilePanel.classList.add("-translate-x-full");
+  }
+
+  menuBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  mobileMenu.addEventListener("click", closeMenu);
+
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+</script>
+
+</body>
+</html>
